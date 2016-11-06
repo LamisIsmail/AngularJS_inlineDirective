@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <title>Starting Angular</title>
+</head>
+
+<!-- Notice here that ng-app references our 'myApp' module -->
+<body ng-app='myApp'>
+    <div ng-controller="AppCtrl" ng-model="title">
+        <h1>{{title}}</h1>
+        <a href="#home">Home</a><br /><br />
+
+        <!--Implement small tags with directives-->
+        <div welcome-message></div><br />
+    </div>
+
+    <!--angular-->
+    <script src="https://code.angularjs.org/1.5.6/angular.js"></script>
+    <script src="https://code.angularjs.org/1.5.6/angular-route.min.js"></script>
+    <!--site-->
+    <script src="js/app.js"></script>
+</body>
+</html>
